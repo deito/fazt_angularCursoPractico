@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fazt-angular6-app';
+  users = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
 }
