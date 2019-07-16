@@ -11,6 +11,7 @@ export class AppComponent {
   users = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
   activated = false;
   */
+ /*
  name: string = 'Ryan Ray';
  age: number;
  address: {
@@ -27,4 +28,10 @@ export class AppComponent {
    };
    this.hobbies =  ['swimming', 'read', 'write'];
  }
+ */
+  users: string[] = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
+
+  sayHello(){
+    alert('Hello!');
+  }
 }
