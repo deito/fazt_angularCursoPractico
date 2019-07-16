@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorld } from './primercomponente/primer.component';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorld,
-    HolaMundoComponent
+    HolaMundoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
