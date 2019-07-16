@@ -29,7 +29,16 @@ export class AppComponent {
    this.hobbies =  ['swimming', 'read', 'write'];
  }
  */
+  name: string = 'Jhon Carter';
+  age: number  = 27;
   users: string[] = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
+
+ addUser(newUser){
+  this.users.push(newUser.value);
+  newUser.value = '';
+  newUser.focus();
+  return false;//al retornar false a submit evita que la pagina se recarge
+ }
 
   deleteUser(user){
     for(let i = 0; i < this.users.length; i++){
