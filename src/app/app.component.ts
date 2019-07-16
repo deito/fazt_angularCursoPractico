@@ -31,7 +31,11 @@ export class AppComponent {
  */
   users: string[] = ['ryan', 'joe', 'cameron', 'john', 'bruce'];
 
-  sayHello(){
-    alert('Hello!');
+  deleteUser(user){
+    for(let i = 0; i < this.users.length; i++){
+      if(user == this.users[i]){
+        this.users.splice(i, 1);
+      }
+    }
   }
 }
